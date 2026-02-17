@@ -8,7 +8,48 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  /* Colors — Dark Tech Palette (Default Dark Mode) */
+  /* Colors — Light Mode Palette (Default) */
+  --bg-primary: #f5f3ef;
+  --bg-secondary: #ebe8e1;
+  --bg-card: rgba(255, 253, 250, 0.9);
+  --bg-card-hover: rgba(245, 243, 239, 1);
+  --bg-glass: rgba(250, 248, 245, 0.75);
+
+  --accent-primary: #0891b2;
+  --accent-secondary: #2563eb;
+  --accent-glow: rgba(8, 145, 178, 0.15);
+  --accent-gradient: linear-gradient(135deg, #0891b2, #2563eb);
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #707070;
+  --text-accent: #0891b2;
+
+  --border-subtle: rgba(100, 100, 100, 0.12);
+  --border-accent: rgba(8, 145, 178, 0.3);
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px 0;
+  --container-width: 1200px;
+  --container-padding: 0 24px;
+
+  /* Effects */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-card: 0 4px 30px rgba(0, 0, 0, 0.05);
+  --shadow-glow: 0 0 30px rgba(8, 145, 178, 0.12);
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
   --bg-primary: #0a0e17;
   --bg-secondary: #111827;
   --bg-card: rgba(17, 24, 39, 0.7);
@@ -30,49 +71,8 @@
   --border-subtle: rgba(148, 163, 184, 0.1);
   --border-accent: rgba(6, 182, 212, 0.3);
 
-  /* Typography */
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
-
-  /* Spacing */
-  --section-padding: 100px 0;
-  --container-width: 1200px;
-  --container-padding: 0 24px;
-
-  /* Effects */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
   --shadow-card: 0 4px 30px rgba(0, 0, 0, 0.3);
   --shadow-glow: 0 0 30px rgba(6, 182, 212, 0.15);
-  --transition-fast: 0.2s ease;
-  --transition-base: 0.3s ease;
-  --transition-slow: 0.5s ease;
-}
-
-/* Light Mode */
-body.light-mode {
-  --bg-primary: #f5f3ef;
-  --bg-secondary: #faf8f5;
-  --bg-card: rgba(250, 248, 245, 0.95);
-  --bg-card-hover: rgba(245, 243, 239, 1);
-  --bg-glass: rgba(250, 248, 245, 0.8);
-
-  --accent-primary: #0891b2;
-  --accent-secondary: #2563eb;
-  --accent-glow: rgba(8, 145, 178, 0.15);
-  --accent-gradient: linear-gradient(135deg, #0891b2, #2563eb);
-
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --text-muted: #6b6b6b;
-  --text-accent: #0891b2;
-
-  --border-subtle: rgba(100, 100, 100, 0.15);
-  --border-accent: rgba(8, 145, 178, 0.3);
-
-  --shadow-card: 0 4px 30px rgba(0, 0, 0, 0.06);
-  --shadow-glow: 0 0 30px rgba(8, 145, 178, 0.12);
 }
 }
 
@@ -840,6 +840,9 @@ ul {
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -872,6 +875,9 @@ ul {
 
 .project-info {
   padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-info h3 {
@@ -907,25 +913,39 @@ ul {
 
 .project-links {
   display: flex;
-  gap: 16px;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 20px;
 }
 
 .project-links a {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  padding: 10px 20px;
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-weight: 500;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-accent);
+  border-radius: 50px;
+  transition: all var(--transition-base);
+  backdrop-filter: blur(10px);
 }
 
 .project-links a:hover {
-  color: var(--accent-primary);
+  color: var(--text-primary);
+  background: var(--accent-glow);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--accent-glow);
 }
 
 .project-links a svg {
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
 }
 
 /* ============================================
@@ -954,6 +974,9 @@ ul {
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .education-card::before {
@@ -1009,6 +1032,11 @@ ul {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.7;
+}
+
+.education-card .project-links {
+  margin-top: auto;
+  padding-top: 20px;
 }
 
 /* Certifications section - force 3 columns in one row */

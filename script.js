@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('themeToggle');
   const body = document.body;
 
-  // Check for saved theme preference or default to dark mode
-  const currentTheme = localStorage.getItem('theme') || 'dark';
-  if (currentTheme === 'light') {
-    body.classList.add('light-mode');
+  // Check for saved theme preference or default to light mode
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  if (currentTheme === 'dark') {
+    body.classList.add('dark-mode');
   }
 
   themeToggle.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
+    body.classList.toggle('dark-mode');
 
     // Save theme preference
-    const theme = body.classList.contains('light-mode') ? 'light' : 'dark';
+    const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
   });
 
