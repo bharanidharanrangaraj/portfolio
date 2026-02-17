@@ -3,25 +3,35 @@
 **Embedded Systems Engineer | Firmware Developer | Hardware-Software Integration Specialist**
 
 📍 Coimbatore, India  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/bharanidharanrangaraj)  
-📧 bharanidharanrangaraj@gmail.com
+🔗 [LinkedIn](https://linkedin.com/in/bharani-dharan-rangaraj) | [GitHub](https://github.com/bharanidharanrangaraj)  
+📧 bharanidharanrangaraj@gmail.com  
+📱 +91 93614 82551
 
 ---
 
 ## 👨‍💻 About Me
 
-I'm an Embedded Systems Engineer with expertise in firmware development, microcontroller programming, and hardware-software integration. My passion lies in building production-grade embedded solutions and contributing to the open-source community through reusable firmware libraries.
+I'm an Embedded Systems Engineer with experianced in firmware development, microcontroller programming, and hardware-software integration. My passion lies in building embedded solutions and contributing to the open-source community through reusable firmware libraries.
 
 Currently working at **Semicon Media Private Limited** as an Embedded Systems Engineer, where I focus on developing innovative embedded solutions.
 
 ## 💼 Professional Experience
 
 ### Embedded Systems Engineer
-**Semicon Media Private Limited** | Coimbatore, India  
+**Semicon Media Private Limited** | Coimbatore, Tamil Nadu
+
 *Nov 2025 - Present*
 
+- Build single-board demos using ESP32, Arduino, and Raspberry Pi Pico
+- Interface peripherals like Sharp distance sensors and MAX98357A audio amplifier
+- Design basic 3D parts and fabricate enclosures using 3D printing
+- Implement interfacing, communication, and control logic in firmware
+- Write technical documentation and maintain code on GitHub for the CircuitDigest platform
+
 ### Associate Embedded Engineer
-**Optipace Technologies Private Limited** | Bangalore, Karnataka  
+**Optipace Technologies Private Limited** | Bangalore, Karnataka
+
+
 *May 2024 - Sept 2025*
 
 - Led engineering team in coordinating testing workflows and performing root cause analysis during validation cycles
@@ -59,12 +69,18 @@ Schematic Design, PCB Layout, Soldering, Hardware Debugging, Multimeter, Oscillo
 VS Code, Git, GitHub, PlatformIO, SEGGER J-Link, Logic Analyzers
 
 **IoT & Connectivity**  
-Wi-Fi, Bluetooth, LoRa, MQTT, HTTP/HTTPS, RESTful APIs
+Wi-Fi, Bluetooth, BLE, LoRa, MQTT, HTTP/HTTPS
 
 **Software & Scripting**  
-Python, Linux, Shell Scripting, Version Control, Debugging Tools
+Linux, Shell Scripting, Version Control, Debugging Tools
 
 ## 🚀 Featured Projects
+
+### ESP32 Text-to-Speech Offline System
+Offline text-to-speech system using ESP32, Talkie Library, and LPC encoding. Features DAC audio output with PAM8403 amplifier for natural-sounding speech synthesis without internet connectivity.
+
+### ESP32 Text-to-Speech Using AI
+Cloud-based text-to-speech system using ESP32 and Wit.ai for natural-sounding voice synthesis. Features AI-powered speech generation, MAX98357A audio amplification, and real-time audio streaming.
 
 ### EduBox - Offline Learning Server
 A Raspberry Pi-based offline education infrastructure for classrooms with poor connectivity. Functions as Wi-Fi hotspot, local content server, and knowledge distribution node serving Wikipedia archives, ebooks, and videos fully offline.
@@ -93,7 +109,7 @@ Compact scrolling text engine for Arduino UNO R4 12×8 LED matrix. Designed for 
 - Optimize firmware for performance and resource constraints
 - Debug hardware and software integration issues
 - Create reusable firmware libraries for the embedded community
-- Build production-grade IoT solutions and embedded systems
+- Build IoT solutions and embedded systems
 
 ## 📫 Get In Touch
 
