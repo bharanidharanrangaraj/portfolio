@@ -41,11 +41,10 @@
         <div class="hero-text fade-in">
           <span class="hero-greeting">Hello, I'm</span>
           <h1 class="hero-name">Bharani Dharan Rangaraj</h1>
-          <h2 class="hero-title">Embedded Systems Engineer | Firmware | Edge Infrastructure | Hardware–Software
-            Integration</h2>
+          <h2 class="hero-title">Embedded Engineer | Firmware Development | Sensor Interfacing | Technical Writer</h2>
           <p class="hero-tagline">
-            Production-grade embedded systems are engineered with deterministic behavior, offline capability, and zero
-            dependency on fragile cloud stacks. Systems are expected to run unattended in the field.
+            Developing embedded firmware and hardware demos across ESP32, Arduino, and Raspberry Pi platforms.
+            Focused on sensor interfacing, peripheral integration, and technical documentation for CircuitDigest.
           </p>
           <div class="hero-cta">
             <a href="#contact" class="btn btn-primary">
@@ -358,7 +357,6 @@
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -477,14 +475,14 @@
               <span>Offline Architecture</span>
             </div>
             <div class="project-links">
-              <a href="#" style="pointer-events: none; opacity: 0.5;">
+              <a href="assets/Edubox - A Device to Learn Without Internet.pdf" target="_blank"
+                rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                  </path>
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
                 </svg>
-                Proprietary
+                View Project PDF
               </a>
             </div>
           </div>
@@ -560,37 +558,38 @@
           </div>
         </div>
 
-        <!-- Project 4: Hydroponics Automation -->
+        <!-- Project 4: Health Monitoring System -->
         <div class="project-card fade-in">
           <div class="project-image">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="8" width="18" height="14" rx="2"></rect>
-              <polyline points="9 2 9 8"></polyline>
-              <polyline points="15 2 15 8"></polyline>
-              <line x1="9" y1="14" x2="15" y2="14"></line>
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
             </svg>
           </div>
           <div class="project-info">
-            <h3>Hydroponics Automation System</h3>
-            <p>Closed-loop environmental control system for hydroponic farming. Monitors temperature, humidity, CO₂, pH,
-              and water temperature while controlling pumps, grow lights, and exhaust fans through threshold logic.</p>
+            <h3>Health Monitoring System</h3>
+            <p>Real-time health monitoring and fall detection system using ESP32. Tracks heart rate (BPM), SpO₂, and
+              body temperature via MAX30102 and MLX90614 sensors. Includes MPU6050-based fall detection with automatic
+              emergency WhatsApp alerts and GPS location sharing, plus a live web dashboard.</p>
             <div class="project-tech">
-              <span>Embedded C</span>
-              <span>Multi-Sensor Integration</span>
-              <span>Actuator Control</span>
-              <span>Threshold Logic</span>
-              <span>Automation</span>
+              <span>ESP32</span>
+              <span>MAX30102</span>
+              <span>MLX90614</span>
+              <span>MPU6050</span>
+              <span>GPS Tracking</span>
+              <span>WhatsApp API</span>
+              <span>PlatformIO</span>
             </div>
             <div class="project-links">
-              <a href="#" style="pointer-events: none; opacity: 0.5;">
+              <a href="https://github.com/bharanidharanrangaraj/Health-Monitoring-System" target="_blank"
+                rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path
                     d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
                   </path>
                 </svg>
-                Proprietary
+                GitHub
               </a>
             </div>
           </div>
@@ -697,6 +696,60 @@
                   <rect x="4" y="10" width="16" height="4"></rect>
                 </svg>
                 Hackster.io
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MINI PROJECTS SECTION
+       ============================================ -->
+  <section id="mini-projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Mini Projects</h2>
+        <p>Small experiments and side builds</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Mini Project 1: OpenCV QR Code Reader -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+              <path d="M14 14h.01"></path>
+              <path d="M14 17h3v3h3v-3"></path>
+              <path d="M17 14h3"></path>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3>OpenCV QR Code &amp; Barcode Reader</h3>
+            <p>Real-time QR code and barcode scanner built with Python and OpenCV. Supports 20 barcode types,
+              prevents duplicate reads, and displays live FPS and scan count on screen via webcam feed.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>pyzbar</span>
+              <span>Computer Vision</span>
+              <span>Real-time Processing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/bharanidharanrangaraj/OpenCV-QR-Code-Reader" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+                GitHub
               </a>
             </div>
           </div>
