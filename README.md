@@ -1,6 +1,6 @@
 # Bharani Dharan Rangaraj
 
-**Embedded Systems Engineer | Firmware Developer | Hardware-Software Integration Specialist**
+**Embedded Engineer | Firmware Development | Sensor Interfacing | Technical Writer**
 
 📍 Coimbatore, India  
 🔗 [LinkedIn](https://linkedin.com/in/bharani-dharan-rangaraj) | [GitHub](https://github.com/bharanidharanrangaraj)  
